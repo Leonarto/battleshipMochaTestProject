@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 
 describe('Check for ship', () => {
-  let checkForShip = require('../game_logic/ship_methods').checkForShip;
+  const checkForShip = require('../game_logic/ship_methods').checkForShip;
   let player;
   
   before(() => {
@@ -45,7 +45,7 @@ describe('Check for ship', () => {
 });
 
 describe('damageShip', () => {
-  let damageShip = require('../game_logic/ship_methods').damageShip;
+  const damageShip = require('../game_logic/ship_methods').damageShip;
   
   it('Should register damage on a given ship on a given location', () => {
     let ship = {
@@ -60,7 +60,7 @@ describe('damageShip', () => {
 });
 
 describe('Fire!!', () => {
-  let fire = require('../game_logic/ship_methods').fire;
+  const fire = require('../game_logic/ship_methods').fire;
   let player;
   
   beforeEach(() => {

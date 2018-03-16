@@ -23,6 +23,8 @@ function fire (player, coordinate) {
   if(ship) damageShip(ship, coordinate);
 }
 
-module.exports.checkForShip = checkForShip;
-module.exports.damageShip = damageShip;
-module.exports.fire = fire;
+module.exports = {
+  checkForShip: checkForShip,
+  damageShip: damageShip,
+  fire: fire
+};

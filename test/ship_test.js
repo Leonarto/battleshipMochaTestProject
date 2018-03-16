@@ -74,14 +74,6 @@ describe('Fire!!', () => {
     };
   });
   
-  after(() => {
-    console.log('Entire test suit completed');
-  });
-  
-  afterEach(() => {
-    console.log('-----------One unit test completed------------')
-  });
-  
   it('Should record damage on the given player ship at a given coordinate', () => {
     fire(player, [0,0]);
     expect(player.ships[0].damage[0]).to.deep.equal([0,0]);

@@ -97,7 +97,7 @@ describe('PLAYER METHODS', () => {
       expect(actual[0]).to.deep.equal([0, 1]);
     });
     
-    it('Should throw an error if no direction is specified', () => {
+    it('should throw an error if no direction is specified', () => {
       let ship = player.ships[0];
       let coordinates = [0, 1];
       
@@ -105,8 +105,5 @@ describe('PLAYER METHODS', () => {
       expect(handler).to.throw(Error);
       expect(handler).to.throw('You left out the direction! I need that for math!');
     });
-    
   });
 });
-
-

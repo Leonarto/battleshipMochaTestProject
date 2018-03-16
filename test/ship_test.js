@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 
 describe('Check for ship', () => {
   let checkForShip = require('../game_logic/ship_methods').checkForShip;
-  let playet;
+  let player;
   
   before(() => {
     player = {
